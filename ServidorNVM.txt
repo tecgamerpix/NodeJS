@@ -1,0 +1,25 @@
+*********Instalacion de un servidor Back End************
+*******Las Petciones  de los usuarios a  plataformas y aplicaciones web deben ser  administradas por un servidor por tal motivo es requerido preparar un administrador de paquetes  que permitira  gestionar el motor de java script sin problemas de depencias y actualizaciones******
+ ****Instalando Un  Administrador de versiones de Nodejs (NVM)*NODE VERSION MANAGER*
+ **Para linux  en consola **previa instalacion de curl**
+ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash 
+*COMPROBANDO*
+$ nvm --version
+*Listando versiones de Nvm*
+$ nvm ls-remote
+*Instalando*
+$ nvm install 7.1.0
+*cOMPROBANDO VERSION
+$ nvm current
+$ node --version
+
+**Para windows 
++descargar el repositorio 
++https://github.com/coreybutler/nvm-windows
++descargar el instalador.zip
++instalar el paquete 
++ comprobar con consola cmd  
+nvm
+nvm install least
+nvm ls
+
