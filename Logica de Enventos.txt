@@ -1,0 +1,27 @@
+*/Node JS  se Auxilia de una serie de logicas para operar de  forma comun   una de ellas es la logica de eventos, que corresponde a cada accion un reaccion   eventos asincronos  
+Modulo de Event Emiter 
+*Sobre la clase Event Emmiter /*
+ //esta empieza con la creacion de una clase para carga del  modulo  en este caso se llama "events"//
+var events = require('events');
+//Posteriormente se crea un objeto  de la clase   events  con descripcion, Event Emitter// 
+var eventEmitter = new events.EventEmitter(); 
+*/Una  vez creado el objeto se carga una funcion  a este para  realizar  la accion del evento en este ejmplo  se  carga la clase EventEmitter,   se crea la instancia   event y se carga un metodo  sin argumentos   some_event  que devuelve el texto   some_event  posterior mente  crea una funcion que manda llamar  al metodo some event una ves que el tiempo se agota  1 segundo" 1000milisefundos/*
+//event.js 
+var EventEmitter = require('events').EventEmitter; 
+var event = new EventEmitter(); 
+event.on('some_event', function() { 
+	console.log('some_event'); 
+}); 
+setTimeout(function() { 
+	event.emit('some_event'); 
+}, 1000); 
+//la logica de   eventos tiene cargados    varios atributos para ser usados    Algunos de los mas populares son //
+//on and emit//
+//un ejemplo del uso de ON//
+server.on('connection', function (stream) {
+  console.log('someone connected!');
+});
+
+
+
+
