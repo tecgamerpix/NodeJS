@@ -1,0 +1,10 @@
+//Node JS permite intecatuar con el sistema operativo  a traves de la libreria os aqui algunos ejemplos
+
+const os = require('os'); // carga de la libreria  interna descomentar la linea segun la info requerida 
+//console.log("Los Datos del CPU son:",os.cpus()); //muestra la  informacion del cpu
+//console.log("los datos de red son ",os.networkinterfaces());   //muestra la informacion de la red
+//console.log("los datos de la memoria son ",os.freemem()); //despliega la informacion de memoria
+//console.log("los datos del sistema son ",os.type,os.release()); //despliega la informacion del sistema operativo
+
+//Si lo que se desea  es trabajar  con los sistema de archivos  
+//primero crear un archivo de texto y llenarlo con un text de prueba 
