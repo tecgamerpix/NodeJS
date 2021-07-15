@@ -1,0 +1,30 @@
+*La logica de eventos  permite a nodejs crear colecciones de datos  para  realizar operaciones complejas 
+*esto a traves de  peños pedazos de  informacion llamados chunks 
+*los mas comunes son
+writablepermite enviar  informacion
+readable  lee y recibe  informacion 
+
++El siguiente ejemplo crea un OBJETO WRITABLE +
+
+const{Writable}=require('stream'); // carga las librearias del modulo)
+const (writableStream)= new Writable({   // Crear un objeto de tipo  Writable
+    wirte(chunk,encodng,callback){   //aplica la funcion  write
+   console.log(chunk.toString());   //escribe la  funcion 
+    callback();
+
+    },
+process.stdin.pipe(writableStream); //ejecutamos la funcion process en apotyo de la funcion stdin,para leer y pipe para transferir los archivos.
+});
+
+
+
++El siguiente ejemplo crea  una funcion  readable +
+
+const{readable}=require('stream'); //carga las librerias del modulo stream
+const (readableStream) = new Readable({}  // crea un nuevo objeto
+readableStream.push('Eso Es '.repeat(5).contact("todo amigos")); // usa la funcion push para enviar la informacion al buffer de cache
+readableStream.push(null);
+readableStream.pipe(process.stdout); // usa la funcion pipe para    leer la funcion stdout de la cache 
+
+
+         ),
