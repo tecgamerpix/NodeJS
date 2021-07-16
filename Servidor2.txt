@@ -1,0 +1,23 @@
+  // La ceracion de un servidor requiere de manipular y creardiversas libreria a lo largo de este ejemplo vamos a probar configurar un servidor con EXPRESSJS
+  
+  //Desde Consola instala la libreria  mediante npm 
+  
+  npm install express
+  npm install colors
+
+//USANDO  EL CODIGO PARA CREAR UN SERVIDOR 
+const express=require('express');
+const colors=require('colors);
+const server = express();   // importamos la librerias de  interaccion  con http
+server.listen(3000.()=>{
+  console.log("servidor encendido en el puerto".Green);  
+
+})
+
+server.get("/",(req,res)) =>{
+    res.send("<h1>hola mundo</h1>");
+    res end();
+
+}
+// ejecutar en la consola debe iniciar un servidor y comentarlo desde consola
+
