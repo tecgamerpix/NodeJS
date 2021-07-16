@@ -21,3 +21,11 @@ server.get("/",(req,res)) =>{
 }
 // ejecutar en la consola debe iniciar un servidor y comentarlo desde consola
 
+
+// LA aUTOMATIZACION DE  ESTE TIPO DE SERVICION SE LLEVA A CABO  EJECUTANDO
+npm init 
+// si se creo el pakage.jason abralo cambiar lo datos de la seccion de Scripts DEV_Dependencies. "test2.echo/Error xxxxx" por la linea 
+
+"dev"; "SET DEBUG =app'& nodemon index",           
+ añadir 
+ "start"; "SET NODE_ENV = production & node index", 
