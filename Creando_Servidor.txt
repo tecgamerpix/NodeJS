@@ -1,4 +1,4 @@
-//Vamos a crear un servidor   primero creamos el  archivo IDEX JSi
+//Vamos a crear un servidor   primero creamos el  archivo IDEX JS
 const http = require('http');   // importamos la librerias de  interaccion  con http
 http.createserver(function(req,res){  //
     res.write("<h1>hola mundo</h1>"); 
